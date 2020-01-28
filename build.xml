@@ -1,0 +1,31 @@
+<project name="Graph" default="help" basedir=".">
+
+<property name="build-directory" value="build"/>
+<property name="source-directory" value="src"/>
+
+   <path id="class-path">
+      <pathelement location="${build-directory}"/>
+   </path>
+
+   <target name="prepare">
+      <delete dir="${build-directory}"/>
+      <mkdir dir="${build-directory}"/>
+   </target>
+
+   <target name="build" depends="prepare">
+      <javac srcdir="${source-directory}" destdir="${build-directory}" includeantruntime="false">
+         <classpath refid="class-path"/>
+      </javac>
+   </target>
+
+   <target name="Graph" depends="build">
+      <java fork="true" failonerror="yes" classname="GraphDriver">
+        <arg line="${nodes}"/>
+		<arg line="${nodes-edges}"/>
+		<arg line="${start}"/>
+		<arg line="${end}"/>
+         <classpath refid="class-path"/>
+      </java>
+   </target>
+
+</project>
