@@ -1,8 +1,8 @@
-Prims and Kruskals v1.0 9/29/2018
+Prims and Kruskals v1.0 1/28/2020
 
 ----------------------------
 CONTACT INFORMATION
-Email : rihall42@students.tntech.edu
+Email : robertisaachallrih@gmail.com
 Website : www.linkedin.com/in/robertisaachall
 
 ***If CSC faculty requests me to remove this due to now being a program again please contact me at the above links ***
